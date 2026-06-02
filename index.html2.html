@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026春季大自然郊遊野餐日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forestGreen: '#2D5A27',
+                        grassGreen: '#A3C9A8',
+                        earthBrown: '#4A3525',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-forestGreen font-bold text-xl tracking-wider">
+                        <i class="fa-solid fa-tree mr-2"></i>大自然野餐日
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-stone-600 hover:text-forestGreen transition font-medium">關於活動</a>
+                    <a href="#info" class="text-stone-600 hover:text-forestGreen transition font-medium">活動資訊</a>
+                    <a href="#register" class="bg-forestGreen hover:bg-earthBrown text-white px-5 py-2 rounded-full text-sm font-medium transition duration-300 hover:scale-105 transform">馬上報名</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" type="button" class="text-stone-600 hover:text-forestGreen focus:outline-none" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 text-center">
+                <a href="#about" class="block px-3 py-2.5 rounded-md text-base font-medium text-stone-600 hover:bg-stone-50 hover:text-forestGreen">關於活動</a>
+                <a href="#info" class="block px-3 py-2.5 rounded-md text-base font-medium text-stone-600 hover:bg-stone-50 hover:text-forestGreen">活動資訊</a>
+                <a href="#register" class="block px-3 py-2.5 mx-auto max-w-xs rounded-full text-base font-medium bg-forestGreen text-white hover:bg-earthBrown transition">馬上報名</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center pt-16 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=80');">
+        <div class="text-center text-white px-4 max-w-3xl z-10">
+            <span class="inline-block bg-white/20 backdrop-blur-md text-white font-semibold tracking-widest text-sm md:text-base px-4 py-1.5 rounded-full mb-6">
+                2026 春季大自然郊遊野餐日
+            </span>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-8 drop-shadow-md">
+                把煩惱留給昨天，<br class="sm:hidden">今天我們一起去野餐！
+            </h1>
+            <a href="#register" class="inline-block bg-white text-forestGreen hover:bg-earthBrown hover:text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                立即搶先報名 <i class="fa-solid fa-arrow-right ml-2 animate-pulse"></i>
+            </a>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-stone-50 rounded-t-[50px] md:rounded-t-[100px]"></div>
+    </header>
+
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-earthBrown tracking-wide mb-4">關於活動</h2>
+            <div class="w-16 h-1 bg-grassGreen mx-auto rounded"></div>
+            <p class="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
+                在繁忙的都市生活中，你有多久沒有好好呼吸、感受草地的溫度了？「2026春季大自然郊遊野餐日」邀請你暫時放下手邊的工作與煩惱，帶著愜意的心情與最愛的人，一起躺在美堤河濱公園的大草皮上，享受陽光、音樂與美食，與大自然來一場最浪漫的春日約會。
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-stone-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80" alt="特色市集" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-forestGreen shadow">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col items-center text-center">
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 border-b-2 border-grassGreen/30 pb-2 w-full">春季限定．特色市集</h3>
+                    <p class="text-stone-600 leading-relaxed text-sm text-justify">
+                        我們特別嚴選了超過 30 家在地獨立文創品牌與環保小農。現場新聞不僅有純手工製作的編織野餐墊、原木器皿及森林系香氛，更網羅了各式野餐輕食、日式手作飯糰、減糖肉桂捲與沁涼的微醺氣泡飲。無論你是想來一場春日尋寶，還是想填飽肚子，都能在綠蔭之下找到屬於你的生活美學，空手前來也能滿載而歸！
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-stone-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="現場草地音樂會" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-forestGreen shadow">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col items-center text-center">
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 border-b-2 border-grassGreen/30 pb-2 w-full">微風輕拂．現場草地音樂會</h3>
+                    <p class="text-stone-600 leading-relaxed text-sm text-justify">
+                        告別都市的喧囂與室內演唱會的擁擠，這次我們把舞台搬到寬廣的大草皮上！活動邀請了多組新生代獨立樂團、清新系雙人組合與不插電 Acoustic 歌手現場輪番開唱。微風徐徐吹過，伴隨著木吉他與溫柔歌聲的流淌，你可以躺在野餐墊上閉眼聆聽，或是隨著節奏一起輕輕搖擺，體驗最純粹、最療癒的午後感官饗宴。
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-stone-100 flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80" alt="風格野餐佈置比賽" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-forestGreen shadow">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col items-center text-center">
+                    <h3 class="text-xl font-bold text-stone-800 mb-4 border-b-2 border-grassGreen/30 pb-2 w-full">美學盛宴．風格野餐佈置賽</h3>
+                    <p class="text-stone-600 leading-relaxed text-sm text-justify">
+                        這不僅是一場野餐，更是展現你生活品味的絕佳舞台！歡迎發揮創意，帶上你最吸睛的波西米亞風野餐墊、夢幻印地安小帳篷、浪漫乾燥花藝或精緻的高腳杯與擺盤。只要在現場完成佈置，並上傳照片參與當天的線上人氣票選，就有機會贏得萬元豪華露營體驗券與精美野餐豪華禮包。快來打造專屬你的打卡聖地吧！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-stone-200 max-w-6xl mx-auto">
+
+    <section id="info" class="py-20 bg-stone-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-earthBrown tracking-wide mb-4">郊遊相關資訊</h2>
+                <div class="w-16 h-1 bg-grassGreen mx-auto rounded"></div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 md:p-10 shadow-lg border border-stone-100 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 text-forestGreen text-xl pt-1 w-8">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 mb-1">日期時間</h4>
+                            <p class="text-stone-600">2026年5月30日 (六) 11:00 - 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 text-forestGreen text-xl pt-1 w-8">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 mb-1">活動地點</h4>
+                            <p class="text-stone-600">台北美堤河濱公園（大草皮區）</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 text-forestGreen text-xl pt-1 w-8">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 mb-1">活動費用</h4>
+                            <p class="text-stone-600">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded font-semibold mr-1">免費</span> 入場
+                                <br><span class="text-sm text-stone-500">（若預訂限量野餐豪華套票為 $500 元）</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-100">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 text-forestGreen text-xl pt-1 w-8">
+                            <i class="fa-solid fa-train-subway"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 mb-2">交通方式</h4>
+                            <ul class="space-y-3 text-stone-600 text-sm leading-relaxed">
+                                <li><strong class="text-stone-800">捷運：</strong>搭乘捷運文湖線至「大直站」，步行約 15 分鐘即可抵達。</li>
+                                <li><strong class="text-stone-800">開車：</strong>導航至美堤河濱公園，車輛可停放至河濱公園內專用停車場。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-20 bg-grassGreen/10 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-earthBrown tracking-wide mb-4">馬上報名</h2>
+                <div class="w-16 h-1 bg-forestGreen mx-auto rounded"></div>
+                <p class="mt-4 text-stone-600">填寫下方簡約表單，與我們一同擁抱大自然！</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-lg border border-stone-100 flex flex-col justify-between">
+                    <form id="regForm" class="space-y-5" onsubmit="event.preventDefault(); alert('報名成功！期待與您在草地上相見。');">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-stone-700 mb-2">姓名</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-forestGreen focus:border-forestGreen outline-none transition text-stone-800 placeholder-stone-400" placeholder="請輸入您的姓名">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-stone-700 mb-2">聯絡電話</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-forestGreen focus:border-forestGreen outline-none transition text-stone-800 placeholder-stone-400" placeholder="例如：0912345678">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-stone-700 mb-2">電子信箱</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-forestGreen focus:border-forestGreen outline-none transition text-stone-800 placeholder-stone-400" placeholder="example@email.com">
+                        </div>
+                        <button type="submit" class="w-full bg-forestGreen hover:bg-earthBrown text-white font-bold py-3.5 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-lg mt-2 transform hover:-translate-y-0.5">
+                            提交報名資料
+                        </button>
+                    </form>
+                </div>
+
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-lg border border-stone-100 min-h-[350px] relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8829377462313!2d121.55462527607755!3d25.07194603675685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac065bfa75b5%3A0x6bfb100877995898!2z576O5o-Q5rKz6pI6YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1715900000000!5m2!1szh-TW!2stw" 
+                        class="absolute inset-0 w-full h-full border-0"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-earthBrown text-stone-200 py-12 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left space-y-2">
+                <p class="text-sm font-light tracking-wide">&copy; 2026 大自然野餐日活動小組 版權所有｜網頁製作：陳相蓁</p>
+                <p class="text-xs text-stone-400 max-w-md">免責聲明：本網站為學期專案練習網頁，網頁內所載之所有活動內容、圖文資訊均為模擬演練，非真實舉辦之活動。</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-grassGreen flex items-center justify-center text-white text-lg transition duration-300 hover:scale-110" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-grassGreen flex items-center justify-center text-white text-lg transition duration-300 hover:scale-110" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-grassGreen flex items-center justify-center text-white text-lg transition duration-300 hover:scale-110" aria-label="Line">
+                    <i class="fa-brands fa-line"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 漢堡選單控制
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // 切換漢堡與關閉圖示
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        });
+
+        // 點擊手機版連結後自動收起選單
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
+    </script>
+</body>
+</html>
